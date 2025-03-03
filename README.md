@@ -39,3 +39,7 @@ The Contact section provides direct links for reaching out, including email and 
 
 Responsive Design & User Experience
 The website is designed to be fully responsive, adapting seamlessly to desktops, tablets, and mobile devices. Media queries ensure optimized layouts, such as adjusting the navigation menu, image positioning, and project displays based on screen size. The scroll-behavior property enables smooth navigation between sections.
+
+##OUTPUT
+
+![Image](https://github.com/user-attachments/assets/01fff281-6e9e-4f5a-bf38-26e6867c1f20)
