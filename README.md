@@ -42,4 +42,4 @@ The website is designed to be fully responsive, adapting seamlessly to desktops,
 
 ##OUTPUT
 
-![Image](https://github.com/user-attachments/assets/01fff281-6e9e-4f5a-bf38-26e6867c1f20)
+
