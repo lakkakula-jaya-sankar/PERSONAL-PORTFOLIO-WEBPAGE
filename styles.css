@@ -1,0 +1,223 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0%;
+}
+::selection{
+    background-color: lightpink;
+    color:black;
+}
+
+/* Nav Bar styles */
+.home{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.home img{
+    width: 40px;
+}
+.home ul{
+    list-style: none;
+    padding:0px;
+}
+.home .ulli{
+    width:100%;
+    text-align: right;
+}
+.home p{
+    margin-left: 10px;
+}
+.nav-list-toggle{
+    display:block !important;
+}
+
+/* Main section styles */
+.box{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 12fr;
+    background:radial-gradient(circle at top left,lightpink 20%,#e0dede 30%,white 50%);
+    align-items: center;
+}
+.image{
+    border-radius: 50%;
+    width: 70%;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.intro{
+    text-align: right;
+    padding-left:40px;
+}
+.intro h2{
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intro #name{
+    display:inline-block;
+    margin:0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    background:linear-gradient(rgb(255, 128, 149)50%,rgb(246, 168, 181),rgb(253, 181, 190),rgb(252, 187, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#des{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hd{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* About Section */
+.about{
+    width: 100%;
+    padding: 15%;
+    box-sizing: border-box;
+    background-image: url(./assets/Untitled\ design.jpg);
+    background-size: cover;
+}
+.about h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.my-des{
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    padding: 5%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+}
+.my-des:hover{
+    box-shadow: 1px 1px 1px 2px lightgrey;
+}
+.my-des p{
+    text-indent: 30%;
+    text-align:justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Project Section */
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding:5% 3%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project div{
+    border: 1px solid black;
+    width:250px;
+    height: 350px;
+    border-radius: 20px;
+    padding:20px;
+    margin:4%;
+}
+.project p{
+    margin:0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fl{
+    transition: all 0.5s ease 0s;
+}
+.fl:hover{
+    transform: scale(1.2,1.2);
+}
+.fl h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bs{
+    background-image: url(./assets/bookstore.jpg);
+    color: white;
+}
+.bt{
+    background-image: url(./assets/brain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.et{
+    background-image: url(./assets/expensetracker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+
+/* Footer Section */
+.pro h2,footer h2{
+    text-align: center;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+footer ul{
+    list-style:none;
+    display: inline-block;
+    padding: 0%;
+}
+footer div{
+    text-align: center;
+}
+footer ul li{
+    color:black;
+}
+
+/* Media Queries for different-screen Support */
+@media(min-width:767px) and (max-width:1281px){
+    .image{
+        margin-left:70px;
+    }
+    .home img{
+        display: none;
+    }
+    .home .ulli{
+        display: inline;
+        width: auto;
+    }
+    .ulli ul li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width:375px) and (max-width:767px){
+    .box{
+        display: grid;
+        grid-template-columns: 6fr;
+        grid-template-rows: 6fr 6fr;
+        background:radial-gradient(circle at top left,lightpink 20%,#e0dede 30%,white 50%);
+        align-items: center;
+        justify-content: center;
+    }
+    .project{
+        justify-content: center;
+    }
+    .image{
+        border-radius: 10%;
+        margin: 1px auto;
+    }
+    .intro{
+        text-align: center;
+        padding:20px;
+    }
+    .ulli ul{
+        display: none;
+    }
+}

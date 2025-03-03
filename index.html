@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lakkakula Jaya Sankar</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./styles.css">
+
+        <!-- For Responsive Nav Bar -->
+        <script>
+            function toggle(){
+                var m = document.getElementById("ham");
+                m.classList.toggle("nav-list-toggle");
+            }
+        </script>
+
+    </head>
+    <body>
+        
+        <!-- Nav Bar code -->
+        <nav class="home">
+            <div>
+                <p>JS</p>
+            </div>
+            <div onclick="toggle()"><img src="./assets/ham.jpg" alt="hamburgermenu"></div>
+            <div class="ulli">
+                <ul id="ham">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#ab">ABOUT</a></li>
+                    <li><a href="#pr">PROJECTS</a></li>
+                    <li><a href="#cu">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main section code -->
+        <section class="box">
+            <div class="intro">
+                <h2>Hello.<br/>
+                I'm <p id="name">Jaya Sankar.</p></h2>
+                <p id="des">A result-oriented Full Stack Developer building and managing dynamic websites and web applications, ensuring seamless functionality across frontend and backend to drive the success of the overall product.</p>
+            </div class="box-img">
+                <img class="image" src="./assets/main.jpg" alt="myimage">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <div id="ab"></div>
+        <section class="about">
+            <h2>About</h2>
+            <div class="my-des">
+                <p>I am <b>Lakkakula Jaya Sankar</b>, a passionate Java Full Stack Developer and a final-year Computer Science and Engineering student at PBR VITS. I have a strong foundation in Java, C, SQL, HTML, CSS,Java Script and Bootstrap, with hands-on experience in developing web applications.
+
+                    I enjoy building scalable and efficient software solutions, and I am currently working on a Hotel Management System using Java (backend) and HTML/CSS (frontend). I have also collaborated on projects like Natural Language to SQL Translation and a Medicine Reminder Application, which have strengthened my problem-solving and teamwork skills.
+                    
+                    I am eager to explore new technologies and continuously enhance my skills to become a proficient Full Stack Developer.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <div id="pr"></div>
+        <section class="pro">
+            <h2 class="hd">Project's</h2>
+            <div class="project">
+                <div class="fl bs">
+                    <h3>Online Book Store</h3>
+                    <p>The Online Book Store is a web-based application that allows users to browse, search, and purchase books online. The project is built using Java Servlets, JSP, and MySQL, providing a dynamic and interactive user experience. The system facilitates book management, user authentication, order processing, and payment handling.</p>
+                </div>
+                <div class="fl bt">
+                    <h3>Brain Tumor Detection</h3>
+                    <p>Developed a robust machine learning model leveraging Convolutional Neural Networks
+                        (CNN) for the detection of brain tumors in medical imaging. The project aimed to enhance diagnostic accuracy and
+                        assist healthcare professionals in identifying tumors at an early stage.</p>
+                </div>
+                <div class="fl et">
+                    <h3>Expense tracker</h3>
+                    <p>The Expense Tracker is a web-based application designed to help users manage their daily expenses efficiently. Developed using HTML, CSS, JavaScript, and Bootstrap, this application allows users to log their expenses, categorize them, and track their spending over time. The system provides an intuitive user interface for better financial management.</p>
+                </div>
+                <div class="fl bs">
+                    <h3>E-commerce Site</h3>
+                    <p>Under Progress..</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <span id="cu"></span>
+            <h2 class="hd">Contact</h2>
+            <div>
+                <ul>
+                    <a href="mailto:lakkakulajayasankar@gmail.com">
+                        <li class="hd"><i class="bi bi-envelope"></i>&nbsp;lakkakulajayasankar@gmail.com</li>
+                    </a>
+                    <br>
+                    <a href="https://www.linkedin.com/in/jayasankarlakkakula/">
+                    <li class="hd"><i class="bi bi-linkedin"></i>&nbsp;jayasankarlakkakula</li>
+                    </a>
+                </ul>
+            </div>
+        </footer>
+        
+    </body>
+</html>
